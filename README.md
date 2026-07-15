@@ -1,9 +1,9 @@
 # Asset Allocation Engineering: Stress-Testing the Crypto Diversification Thesis
 
 ## Project Overview
-ARK Invest’s foundational research asserts that alternative digital risk assets like Bitcoin introduce structural diversification and asymmetric upside to multi-asset class allocations. This project constructs a quantitative portfolio engineering engine to evaluate this thesis under the lens of Markowitz Mean-Variance Optimization (MVO). 
+ARK Invest’s research suggests that digital assets like Bitcoin introduce structural diversification to multi-asset class portfolios. This project constructs a quantitative portfolio engineering engine to evaluate this thesis using Markowitz Mean-Variance Optimization (MVO). 
 
-The pipeline simulates a 7-asset class universe over a historical window (2018–2023), comparing an empirical 50,000-portfolio Monte Carlo simulation against analytical closed-form tangency solutions to locate the true maximum Sharpe ratio boundary[cite: 2].
+The pipeline simulates a 7-asset class universe over a historical window (2018–2023), comparing an empirical 50,000-portfolio Monte Carlo simulation against analytical closed-form tangency solutions to locate the maximum Sharpe ratio boundary.
 
 ## Asset Universe & Proxies
 The investment universe spans seven global capital vectors, mapping liquid ETFs as strategic proxies:
@@ -33,8 +33,8 @@ The investment universe spans seven global capital vectors, mapping liquid ETFs 
 * **Monte Carlo Minimum Variance:** Expected Return: **3.15%** | Volatility: **3.62%** | Sharpe Ratio: **-0.2357**
 
 ## Strategic Analysis & Sensitivity Testing
-* **Risk-Free Rate Hurdles:** Adjusting the risk-free rate assumption from 0% up to 5% forces a significant portfolio realignment, as the optimizer requires progressively higher risk-adjusted return hurdles to justify holding high-volatility assets[cite: 2].
-* **Temporal Windows:** Sub-sample testing reveals deep regime variance. In pre-2021 market cycles, alternative assets showed stronger return-to-volatility generation, whereas subsequent macroeconomic contraction cycles (2021–2022) shifted allocations heavily toward defensive money market proxies[cite: 2].
+* **Risk-Free Rate Hurdles:** Adjusting the risk-free rate assumption from 0% up to 5% forces a significant portfolio realignment, as the optimizer requires progressively higher risk-adjusted return hurdles to justify holding high-volatility assets.
+* **Temporal Windows:** Sub-sample testing reveals deep regime variance. In pre-2021 market cycles, alternative assets showed stronger return-to-volatility generation, whereas subsequent macroeconomic contraction cycles (2021–2022) shifted allocations heavily toward defensive money market proxies.
 
 ## Technical Execution Environment
 * **Language:** Python
